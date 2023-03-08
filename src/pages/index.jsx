@@ -19,8 +19,8 @@ import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image4 from '@/images/photos/image-4.jpeg'
+import image5 from '@/images/photos/image-5.jpeg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -277,12 +277,12 @@ export default function Home({ articles }) {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/jdubba1"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/james-wissemann-39b607166"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
