@@ -265,14 +265,14 @@ export default function Home({ articles }) {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-6xl">
             Hi. I&apos;m James. I&apos;m a...
           </h1>
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
             Software Developer, AI Enthusiast, and part-time musician.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-8 text-base text-zinc-600 dark:text-zinc-400">
 
             I&apos;m James, a freelance software developer based in Austin.
             I&apos;m passionate about creating functional and modern software solutions for my clients. 
-            Whether you&apos;re looking to build a full stack application from the ground up, or just need a little help setting up a personal blog, I&apos;m here to help.
+            Whether you&apos;re looking to build a full stack application from the ground up, create a competitive ecommerce site, or just need to set up a personal blog, I can help.
 
           </p>
           <div className="mt-6 flex gap-6">
@@ -289,7 +289,7 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-      <Photos />
+      {/* <Photos /> */}
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
