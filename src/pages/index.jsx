@@ -251,35 +251,31 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          James Wissemann
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I'm James, a freelance software developer based in Austin.
+          I'm passionate about creating functional and modern software solutions for my clients. 
+          Whether you're looking to build a full stack application from the ground up, or just need a little help setting up a personal blog, I'm here to help."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-6xl">
+            Hi. I&apos;m James. I&apos;m a...
+          </h1>
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+            Software Developer, AI Enthusiast, and part-time musician.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+
+            I&apos;m James, a freelance software developer based in Austin.
+            I&apos;m passionate about creating functional and modern software solutions for my clients. 
+            Whether you&apos;re looking to build a full stack application from the ground up, or just need a little help setting up a personal blog, I&apos;m here to help.
+
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
             <SocialLink
               href="https://github.com"
               aria-label="Follow on GitHub"
