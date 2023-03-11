@@ -1,6 +1,7 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
-import designSystem from './planetaria-design-system.png'
+import designSystem from './selection-tool-2.jpg'
+
 
 export const meta = {
   author: 'James Wissemann',
@@ -12,26 +13,37 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.
+Getting a CMS like WordPress to work seamlessly with a modern javascript framework can be difficult, but may be the perfect solution if you only need custom functionality on a single page.
 
-<Image src={designSystem} alt="" />
+<Image src={designSystem} alt="A picture of the Infinitum site." />
 
-I knew that to get it right I was going to have to replicate the viewing conditions of someone from the future, so I grabbed my space helmet from the closet, created a new Figma document, and got to work.
+This project is currently live, and you can check it out [here.](http://goinfinitum.com/motor-selection)
 
-## Sermone fata
+*Try HP inputs between 3 and 15, and RPM inputs between 2000 and 4500.*
 
-Lorem markdownum, bracchia in redibam! Terque unda puppi nec, linguae posterior
-in utraque respicere candidus Mimasque formae; quae conantem cervice. Parcite
-variatus, redolentia adeunt. Tyrioque dies, naufraga sua adit partibus celanda
-torquere temptata, erit maneat et ramos, [iam](#) ait dominari
-potitus! Tibi litora matremque fumantia condi radicibus opusque.
+## The Problem
 
-Deus feram verumque, fecit, ira tamen, terras per alienae victum. Mutantur
-levitate quas ubi arcum ripas oculos abest. Adest [commissaque
-victae](#) in gemitus nectareis ire diva
-dotibus ora, et findi huic invenit; fatis? Fractaque dare superinposita
-nimiumque simulatoremque sanguine, at voce aestibus diu! Quid veterum hausit tu
-nil utinam paternos ima, commentaque.
+My Client for this project, [Infinitum](http://goinfinitum.com/), is a company that builds highly efficient electric motors.
+They approached me looking for a simple tool which would recommend motors to the user based on input data. 
+Initially, they were looking for some very basic functionality, and didn't want to link to an external site or alter their existing WordPress installation.
+
+## Phase 1: WP CodeSnippets
+
+To achieve the functionality my client sought after without altering their existing site, I decided to use the [CodeSnippets](https://wordpress.org/plugins/code-snippets/) plugin to add a custom page template to their site.
+By writing some javascript which scored motors by their relative distance from the user input, and writing *way* too much CSS, I was able to create a simple, single page application which would recommend motors to the user. 
+Most of this CSS was written to override the default wordpress styles, and to make the page look more like the rest of the site.
+
+## Phase 2: ReactPress
+
+After the initial release of the tool, my client requested some additional functionality, including the ability to export motor recommendations as pdfs, and retrieve estimated efficiency data from a database.
+At this point, I decided to rewrite the application in React, and to use the [ReactPress](https://wordpress.org/plugins/reactpress/) plugin to render the React application on the page. 
+This allowed me to use the same page template as before, and to keep the same URL, but to use React to handle the additional functionality. 
+Furthermore, it made it possible to add css libraries like [TailwindCss](https://tailwindcss.com/) to the project, which made styling the application *much* easier.
+
+
+
+
+
 
 ```c
 exbibyte_wins = gigahertz(3);
