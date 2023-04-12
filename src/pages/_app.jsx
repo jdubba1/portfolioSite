@@ -18,6 +18,9 @@ function usePrevious(value) {
   return ref.current
 }
 
+<script defer src="https://tracklyze.com/insightCore.js" data-domain="james-wissemann.com"></script>
+
+
 
 
 export default function App({ Component, pageProps, router }) {
