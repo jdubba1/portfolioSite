@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import Head from 'next/head'
 
 
 import { Footer } from '@/components/Footer'
@@ -28,6 +29,14 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
+     <Head>
+        <script
+          src="https://tracklyze.com/insightCore.js"
+          data-domain="james-wissemann.com"
+          async
+          defer
+        ></script>
+      </Head>
       <BlurBlob />
       <div id="blur">BLUR</div>
       <div className="fixed inset-0 flex justify-center sm:px-8">
