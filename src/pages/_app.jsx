@@ -31,7 +31,7 @@ export default function App({ Component, pageProps, router }) {
     <>
      <Head>
         <script
-          src="https://tracklyze.com/insightCore.js"
+          src="https://tracklyze.com/insight_core_dev.js"
           data-domain="james-wissemann.com"
           async
           defer
@@ -41,7 +41,7 @@ export default function App({ Component, pageProps, router }) {
       <div id="blur">BLUR</div>
       <div className="fixed inset-0 flex justify-center sm:px-8">
         <div className="flex w-full max-w-7xl lg:px-8">
-          <div className="w-full bg-white dark:bg-zinc-900 bg-opacity-0 " />
+          <div className="w-full bg-white bg-opacity-0 dark:bg-zinc-900 " />
         </div>
       </div>
       <div className="relative">
